@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎰 Grupo Oficial de Slots 💰</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { height:100%; font-family:'Poppins', sans-serif; overflow:hidden; background: linear-gradient(135deg, #1a001f, #330033); color:#fff; display:flex; justify-content:center; align-items:center;}
+    .coin { position:absolute; width:20px; height:20px; background:gold; border-radius:50%; animation:fall linear infinite; }
+    @keyframes fall { 0%{transform:translateY(-50px) rotate(0deg); opacity:1;} 100%{transform:translateY(110vh) rotate(360deg); opacity:0;} }
+    .content { position:relative; z-index:10; text-align:center; padding:20px; }
+    h1 { font-size:3em; color:#ffd700; text-shadow:0 0 20px #ff6f00; margin-bottom:20px; animation:glow 2s ease-in-out infinite alternate; }
+    @keyframes glow { 0% {text-shadow:0 0 10px #ff6f00;} 100%{text-shadow:0 0 30px #ffd700;} }
+    p { font-size:1.2em; margin:10px 0; line-height:1.5; }
+    .alerta { background:#ff0000cc; display:inline-block; padding:10px 20px; border-radius:10px; font-weight:bold; margin:20px 0; animation:piscar 1s infinite; }
+    @keyframes piscar { 0%,100% {opacity:1;} 50%{opacity:0.5;} }
+    .btn { display:inline-block; background:linear-gradient(90deg,#ff6f00,#ffd700); color:#000; font-weight:bold; font-size:1.5em; padding:20px 50px; border-radius:50px; text-decoration:none; box-shadow:0 0 30px #ff9f00; transition:0.3s; }
+    .btn:hover { transform:scale(1.1); box-shadow:0 0 50px #ffd700; }
+    footer { margin-top:50px; font-size:0.9em; color:#ccc; }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>🎰 GRUPO OFICIAL DE SLOTS 💰</h1>
+    <p>🔥 Entre agora e garanta sua vaga no grupo que mais paga no Brasil!</p>
+    <p>💎 Banca GRÁTIS todos os dias<br>🎁 Dinâmicas e sorteios de PIX<br>💰 Bônus exclusivos!</p>
+    <div class="alerta">⚠️ VAGAS LIMITADAS! ENTRANDO HOJE TEM BÔNUS!</div>
+    <br>
+    <a href="https://chat.whatsapp.com/Ke5CkQ726EN4SpXBRtEwQR" class="btn">👉 ENTRAR AGORA NO GRUPO</a>
+    <footer>© 2025 - Grupo Oficial de Slots | Todos os direitos reservados</footer>
+  </div>
+  <script>
+    const numberOfCoins=30;
+    for(let i=0;i<numberOfCoins;i++){
+      let coin=document.createElement('div');
+      coin.classList.add('coin');
+      coin.style.left=Math.random()*100+'vw';
+      coin.style.animationDuration=(3+Math.random()*5)+'s';
+      coin.style.width=coin.style.height=(10+Math.random()*15)+'px';
+      document.body.appendChild(coin);
+    }
+  </script>
+</body>
+</html>
